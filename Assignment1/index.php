@@ -12,7 +12,7 @@
   </head>
   <body>
     <div class = "container">
-          <form name="project form" method = "post" action = "#" id="project form" class="form">
+          <form name="project form" method = "post" action = "#" id="projectform" class="form">
                   <!-- First name and last name boxes on the first row -->
                   <div class = "form-group row">
                     <div class = "col">  
@@ -55,7 +55,8 @@
                 </div>
             </div>
 
-            <div class="form-group">
+            <!--Gender buttons-->
+            <div class="col-2">
                 <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="gender" id="optionmale" value="male">
                     <label class="form-check-label" for="optionmale">Male</label>
@@ -65,6 +66,8 @@
                     <label class="form-check-label" for="optionfemale">Female</label>
                 </div>   
             </div>
+            
+            <!--Submit button-->
             <button type="submit" class="btn btn-primary">Register</button>
         </form>
     </div>
