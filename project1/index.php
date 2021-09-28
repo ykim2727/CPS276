@@ -1,26 +1,23 @@
-<head></head>
-<label>First Name: <input type="text" name="first_name" size="15"></label>
+<?php
+$firstName = "justin";
+$lastName = "kim";
+$age = "25";
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP Testing</title>
+</head>
 <body>
-Hello, today is <?php echo date('l, F jS, Y'); ?>.
-<table border="1">
- <tr>
- <td>Cell 1</td>
- <td>Cell 2</td>
- <td>TEST</td>
- </tr>
- <tr>
- <td>row 2 cell 1</td>
- <td>row 2 cell 2</td>
- <td>row 2 cell 3</td>
- </tr>
-</table>
-<label>Title <input type="text" size="5" name="somename"></label>
-<h1>Glossary</h1>
-<dl>
- <dt>XHTML</dt>
- <dd>Extensible Hypertext Markup Language, the structural markup of a web page</dd>
- <dt>CSS</dt>
- <dd>Cascading Style Sheets, which determines the presentation of a web page</dd>
-</dl>
+    <p>
+        My name is <?php echo $firstName." ".$lastName?>. I am <?php echo $age ?> years old
+        <label>Test</label>
+        <input type = "text" class = "form-control" name ="firstname" id = "fname">
+    </p>
 </body>
 </html>
