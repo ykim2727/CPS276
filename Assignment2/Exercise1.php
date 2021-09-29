@@ -1,4 +1,4 @@
-<?php>
+<?php
 
 $mainList = [1,2,3,4];
 $subList = [1,2,3,4,5];
