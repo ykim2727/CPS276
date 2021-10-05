@@ -1,38 +1,45 @@
 <?php
-    $i = 0;
-    $output = "";
-    while ($i < 10){
-        $output .= $i."--";
-        $i++;
+
+class Car{
+    public $color = "red";
     }
-    $str = "Programming in PHP is cool";
-    $arr = explode(" ",$str);
-    echo "<pre>";
-    print_r($arr);
-    echo "</pre>";
 
-$firstName = "justin";
-$lastName = "kim";
-$age = "25";
-$ageTwo = 25;
+$beetle = new Car();
+$mustang = new Car();
+echo "<pre>";
+$beetle->color="blue";
+print_r( $beetle ); // DISPLAYS "CAR OBJECT ( )"\
+echo "<br>";
+print_r( $mustang ); // DISPLAYS "CAR OBJECT ( )"
+$mustang->color="green";
+echo "<br>";
+print_r( $mustang ); // DISPLAYS "CAR OBJECT ( )"
 
 
-if($firstName == $lastName){
-    echo "equal";
-}
-else echo "not equal";
+class MyClass {
+    public $greeting = "Hello, World!";
+    public function hello() {
+    return $this->greeting;
+    }
+   }
+   $obj = new MyClass;
+   echo $obj->hello(); // DISPLAYS "HELLO, WORLD!"
 
-if ($age == $ageTwo){
-    echo " EQUAL";
-}
-
-$string = <<<HTML
-<p>This is a heredoc multi-line string with "quotes", the double quotes render because we are using 
-the heredoc, where both 'single' and "double quotes" render</p>;
-HTML;
-
-echo $string;
-
+   class Person {
+    private $_firstName;
+    private $_lastName;
+    private $_age;
+    public function __construct( $firstName, $lastName, $age ) {
+    $this->_firstName = $firstName;
+    $this->_lastName = $lastName;
+    $this->_age = $age;
+    }
+    public function showDetails() {
+    echo "$this->_firstName $this->_lastName, age $this->_age\n";
+    }
+   }
+   $p = new Person( "Harry", "Walters", 28 );
+   $p->showDetails(); // Displays "Harry Walters, age 28"
 ?>
 
 <!DOCTYPE html>
@@ -41,14 +48,9 @@ echo $string;
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PHP Testing</title>
+    <title>Document</title>
 </head>
 <body>
-    <p>
-    <?php echo $output;?>
-        My name is <?php echo $firstName." ".$lastName?>. I am <?php echo $age ?> years old
-        <label>Test</label>
-        <input type = "text" class = "form-control" name ="firstname" id = "fname">
-    </p>
+    
 </body>
 </html>
