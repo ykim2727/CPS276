@@ -27,7 +27,7 @@ $notes = $dt->checkSubmit();
                 </div>
                 <div class="form-group">
                     <label for="dateTime">Date and Time</label>
-                    <input type="datetime-local" class="form-control" id="dateTime" name="dateTime">
+                    <input type="datetime-local" class="form-control" id="dataTime" name="dateTime">
                 </div>
                 <div class="form-group">
                     <label for="note">Note</label>
